@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="module">
+    import { createTodoApp } from './todo-app.js';
+    let key = '';
+    createTodoApp(document.getElementById('list-2'), 'Список-2', key = 'list-2');
+  </script>
+  <style>
+    .nav-link {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Мои дела</a>
+      <a href="mom.html" class="nav-link">Дела мамы</a>
+      <a href="dad.html" class="nav-link">Дела папы</a>
+    </nav>
+  </div>
+  <div id="list-2" class="container">
+
+  </div>
+</body>
+
+</html>
